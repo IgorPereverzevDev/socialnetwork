@@ -24,7 +24,7 @@ The application is a social network with the ability to send messages, subscribe
     $ gradle build
     Run the project:
 
-    $ java -jar socialnetwork.jar
+    $ gradle bootRun
     
 The app will start running at http://localhost:8080
 
