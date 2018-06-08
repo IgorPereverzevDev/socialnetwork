@@ -46,7 +46,7 @@ public class Action {
 
         log.info(MessageValues.RECEIVED);
 
-        return messageRepository.save(wall).getUserId();
+        return messageRepository.save(wall).getMessages().iterator().next().getMessageId();
     }
 
     public Set<Message> getAllMessages(Long id) {
