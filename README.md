@@ -1,17 +1,17 @@
 
 
-SpringBoot Gradle MVC application
+# SpringBoot Gradle MVC application
 
     1.JPA
     2.Spring boot, Spring MVC
     3.Gradle
 
-Git
+# Git
 
     1. git clone https://github.com/zorg9pi9/socialnetwork.git
     2. go to this directory
 
-Gradle
+# Gradle
 
     Gradle Command Line
     Clean the project:
@@ -24,7 +24,7 @@ Gradle
 
     $ gradle run
 
-API
+# API
     Send the message
     1. https://localhost:8080/send?userId = 1
 
