@@ -25,6 +25,8 @@ The application is a social network with the ability to send messages, subscribe
     Run the project:
 
     $ java -jar socialnetwork.jar
+    
+The app will start running at http://localhost:8080
 
 # API
 
