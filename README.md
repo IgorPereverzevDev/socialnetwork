@@ -2,6 +2,8 @@
 
 # SocialNetwork application
 
+The application is a social network with the ability to send messages, subscribe to other users, unsubscribe from users and receive a list of own messages and users who are subscribed in chronological order
+
     1.JPA
     2.Spring boot, Spring MVC
     3.Gradle
@@ -43,7 +45,7 @@
     POST Send the message
     POST Following the user
     POST Unfollowed the user
-    GET Get a list of messages
+    GET  Get a list of messages
     
 # Request and Response
 
