@@ -29,7 +29,9 @@ API
     1. https://localhost:8080/send?userId = 1
 
     Request:
-    {	"text" : "test"	}
+    {	
+        "text" : "test"	
+    }
 
     Response:
     messageId = 1
