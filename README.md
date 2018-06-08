@@ -25,8 +25,27 @@
     $ java -jar socialnetwork.jar
 
 # API
+
     Send the message
-    1. https://localhost:8080/send?userId = 1
+    1. https://localhost:8080/send?userId=1
+    
+    Following the user
+    2. https://localhost:8080/follow?userId=1&userFollowId=2
+    
+    Unfollowed the user
+    3. https://localhost:8080/unfollow?userId=1&userFollowId=2
+    
+    getMessages
+    4. https://localhost:8080/messages?userId=1
+    
+# HTTP requests
+
+    POST Send the message
+    POST Following the user
+    POST Unfollowed the user
+    GET Get a list of messages
+    
+# Request and Response
 
     Request:
     {	
@@ -36,8 +55,7 @@
     Response:
     messageId = 1
 
-    Following the user
-    2. https://localhost:8080/follow?userId=1&userFollowId=2
+   
 
     Response:
     true 
@@ -49,6 +67,10 @@
 
     Response:
     true
+    
+# HTTP requests
+    POST Create a resource
+    GET Get a resource or list of resource
 
     The next attempt will return false for these IDs
 
