@@ -34,10 +34,10 @@ The application is a social network with the ability to send messages, subscribe
     Following the user
     2. https://localhost:8080/follow?userId=1&userFollowId=2
     
-    Unfollowed the user
+    Unfollowing the user
     3. https://localhost:8080/unfollow?userId=1&userFollowId=2
     
-    getMessages
+    Get messages
     4. https://localhost:8080/messages?userId=1
     
 # HTTP requests
@@ -49,36 +49,30 @@ The application is a social network with the ability to send messages, subscribe
     
 # Request and Response
 
+    1.Send the message
     Request:
-    {	
-        "text" : "test"	
-    }
+        {	
+          "text" : "test"	
+        }
 
     Response:
     messageId = 1
 
    
-
+    2.Following the user
     Response:
     true 
 
     The next attempt will return false for these IDs
 
-    Unfollowed the user
-    3. https://localhost:8080/unfollow?userId=1&userFollowId=2
-
+    3.Unfollowing the user
     Response:
     true
     
-# HTTP requests
-    POST Create a resource
-    GET Get a resource or list of resource
-
     The next attempt will return false for these IDs
-
-    4. https://localhost:8080/messages?userId = 1
-    Response:
-
+    
+    4.Get messages
+    Response
     [
         {
             "messageId": 1,
