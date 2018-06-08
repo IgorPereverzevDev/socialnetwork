@@ -1,6 +1,6 @@
 
 
-# SpringBoot Gradle MVC application
+# SocialNetwork application
 
     1.JPA
     2.Spring boot, Spring MVC
@@ -22,7 +22,7 @@
     $ gradle build
     Run the project:
 
-    $ gradle run
+    $ java -jar socialnetwork.jar
 
 # API
     Send the message
