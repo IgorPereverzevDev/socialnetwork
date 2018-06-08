@@ -15,7 +15,7 @@ import java.util.Set;
 import static junit.framework.Assert.*;
 
 @RunWith(SpringRunner.class)
-public class ActionTest {
+public class ActionImplTest {
 
     @MockBean
     MessageService messageService;
