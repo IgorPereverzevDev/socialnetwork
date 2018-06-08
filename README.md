@@ -15,13 +15,14 @@ The application is a social network with the ability to send messages, subscribe
 
 # Gradle
 
-    Gradle Command Line
     Clean the project:
 
     $ gradle clean
+    
     Build the project:
 
     $ gradle build
+    
     Run the project:
 
     $ gradle bootRun
