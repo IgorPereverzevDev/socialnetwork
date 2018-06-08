@@ -15,16 +15,17 @@ The application is a social network with the ability to send messages, subscribe
 
 # Gradle
 
-    Gradle Command Line
     Clean the project:
 
     $ gradle clean
+    
     Build the project:
 
     $ gradle build
+    
     Run the project:
 
-    $ java -jar socialnetwork.jar
+    $ gradle bootRun
     
 The app will start running at http://localhost:8080
 
