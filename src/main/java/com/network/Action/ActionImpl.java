@@ -28,6 +28,7 @@ public class ActionImpl implements Action {
         this.userRepository = userRepository;
     }
 
+    @Override
     public Long publish(Message message, Long userId) {
         Wall wall = messageRepository.findById(userId).orElse(new Wall());
         User user = userRepository.findById(userId).orElse(new User());
@@ -49,10 +50,12 @@ public class ActionImpl implements Action {
         return messageRepository.save(wall).getMessages().iterator().next().getMessageId();
     }
 
+    @Override
     public Set<Message> getAllMessages(Long id) {
         return messageRepository.findById(id).orElse(new Wall()).getMessages();
     }
 
+    @Override
     public boolean follow(Long userId, Long userFollowId) {
         User user = userRepository.findById(userId).orElse(new User());
         User userFollow = userRepository.findById(userFollowId).orElse(new User());
@@ -86,6 +89,7 @@ public class ActionImpl implements Action {
     }
 
 
+    @Override
     public boolean unFollow(Long userId, Long userUnFollowId) {
         User user = userRepository.findById(userId).orElse(new User());
         User userUnFollow = userRepository.findById(userUnFollowId).orElse(new User());
